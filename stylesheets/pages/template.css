@@ -44,16 +44,7 @@
   visibility: hidden;
 }
 
-.is--active {
-  visibility: visible !important;
 
-  font-weight: 700;
-  background-image: url('/assets/icon/more-right-active.svg');
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  color: var(--color-blue-600) !important;
-
-}
 
 
 #firstBox {
@@ -83,6 +74,10 @@
   background-image: url('/assets/icon/more-right-active.svg');
   background-repeat: no-repeat;
   background-position: 100% 50%;
+}
+
+.choiceLink:hover {
+  font-weight: 700 !important;
 }
 
 .link {
@@ -164,6 +159,16 @@
 
 .thirdLink {
   width: 95%;
+}
+
+.is--active {
+  visibility: visible !important;
+  font-weight: 700 !important;
+  background-image: url('/assets/icon/more-right-active.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  color: var(--color-blue-600) !important;
+
 }
 
 /* ---------------------------------------------- */
