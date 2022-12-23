@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,42 +9,77 @@
   <link rel="icon" href="/assets/favicon/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="/stylesheets/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script type="module" src="./js/main.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="header">
-      <!-- 헤더 영역 -->
-      <!-- 대제목의 경우 "Coupang"으로 미리 마크업되어 있습니다. -->
-      <h1 class="sr-only">Coupang</h1>
-      <div class="header__inner">
-        <!-- 카테고리 버튼은 .header__inner 영역 안에 마크업 해주세요. -->
+<body>
+  <header class="header">
+    <!-- 헤더 영역 -->
+    <!-- 대제목의 경우 "Coupang"으로 미리 마크업되어 있습니다. -->
+    <h1 class="sr-only">Coupang</h1>
+    <div class="header__inner">
+      <button class="button--category">
+        <img src="/assets/icon/hamburger.svg" alt="카테고리">카테고리
+      </button>
+    </div>
+  </header>
 
-      </div>
-    </header>
+  <nav class="navigation"> <!--버튼에 마우스가 올라가면 여기가 보임-->
+    <!-- 내비게이션 영역 -->
+    <!-- 내비게이션 제목 -->
 
-    <nav class="navigation">
-      <!-- 내비게이션 영역 -->
-      <!-- 내비게이션 제목 -->
+    <div class="navigation__inner">
+      <!-- 카테고리별 내비게이션(메뉴) 영역 -->
 
-      <div class="navigation__inner">
-        <!-- 카테고리별 내비게이션(메뉴) 영역 -->
+      <ul class="navigation__list">
+        <ul id="firstBox">
+          <a class="choiceLink" role="button"><i class="icon-clothes">패션의류/잡화</i></a>
+          <ul class="secondBox">
+            <ul>
+              <a class="choiceLink" role="button" id="secondBoxFirstA">여성패션</a>
+              <ul class="thirdBox">
+                <a class="link" href="/">의류</a>
+                <a class="link" href="/">속옷/잠옷</a>
+                <a class="link" href="/">신발</a>
+              </ul>
+              <a class="link" role="button">남성패션</a>
+              <a class="link" role="button">유아동패션</a>
+            </ul>
+          </ul>
+          <a class="link" role="button"><i class="icon-beauty"></i>뷰티</a>
+          <a class="link" role="button"><i class="icon-baby"></i>출산유아동</a>
+          <a class="link" role="button"><i class="icon-foods"></i>식품</a>
+          <a class="link" role="button"><i class="icon-kitchenware"></i>주방용품</a>
+          <a class="link" role="button"><i class="icon-houseware"></i>생활용품</a>
+          <a class="link" role="button"><i class="icon-interior"></i>홈인테리어</a>
+          <a class="link" role="button"><i class="icon-appliances"></i>가전디지털</a>
+          <a class="link" role="button"><i class="icon-sports"></i>스포츠</a>
+          <a class="link" role="button"><i class="icon-car"></i>자동차용품</a>
+          <a class="link" role="button"><i class="icon-book"></i>도서음반</a>
+          <a class="link" role="button"><i class="icon-toy"></i>완구취미</a>
+          <a class="link" role="button"><i class="icon-stationery"></i>문구오피스</a>
+          <a class="link" role="button"><i class="icon-pet"></i>반려동물</a>
+          <a class="link" role="button"><i class="icon-travel"></i>여행티켓</a>
+          <a class="link" role="button"><i class="icon-theme"></i>테마관 <img src="/assets/icon/new.svg" alt="new"></a>
+        </ul>
+      </ul>
+    </div>
+  </nav>
 
-      </div>
-    </nav>
+  <main class="main">
+    <!-- 메인 콘텐츠 영역 -->
+    <!-- 해당 영역은 추가적인 마크업없이 비워놓아 주세요. -->
+  </main>
 
-    <main class="main">
-      <!-- 메인 콘텐츠 영역 -->
-      <!-- 해당 영역은 추가적인 마크업없이 비워놓아 주세요. -->
-    </main>
+  <footer class="footer">
+    <!-- 푸터 영역 -->
+    <!-- 푸터 관련 콘텐츠는 .footer 영역 안에 마크업 해주세요. -->
 
-    <footer class="footer">
-      <!-- 푸터 영역 -->
-      <!-- 푸터 관련 콘텐츠는 .footer 영역 안에 마크업 해주세요. -->
-      
-    </footer>
-  </body>
+  </footer>
+</body>
 
 </html>
