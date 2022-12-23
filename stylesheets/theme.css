@@ -71,6 +71,10 @@
   --font-family: 'Noto Sans KR', sans-serif;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 html {
   font-size: var(--base-size);
   overflow-x: hidden;

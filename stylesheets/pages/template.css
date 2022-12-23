@@ -40,13 +40,21 @@
   margin-left: 450px;
   box-shadow: 0px 4px 4px var(--color-gray-500);
   position: relative;
+  background-image: none !important;
   visibility: hidden;
 }
 
 .is--active {
   visibility: visible !important;
+
+  font-weight: 700;
+  background-image: url('/assets/icon/more-right-active.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
   color: var(--color-blue-600) !important;
+
 }
+
 
 #firstBox {
   width: 180px;
@@ -56,6 +64,7 @@
   align-items: center;
   padding-top: 10px;
   font-size: 12px;
+  background-image: none !important;
 }
 
 .choiceLink {
@@ -63,19 +72,28 @@
   height: 30px;
   display: flex;
   align-items: center;
-  padding-left: 20px;
   color: black;
+
+}
+
+.choiceLink:focus {
+  font-weight: 700 !important;
+  outline: 2px solid var(--color-blue-600);
+  color: var(--color-blue-600);
+  background-image: url('/assets/icon/more-right-active.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .link {
-  width: 170px;
+  width: 98%;
   height: 30px;
   display: flex;
   align-items: center;
   padding-left: 20px;
   font-size: 12px;
-  font-weight: 400;
-  color: black !important;
+  font-weight: 400 !important;
+  color: black
 }
 
 
@@ -89,6 +107,8 @@
   display: flex;
   flex-direction: column;
   visibility: hidden;
+  font-weight: 400 !important;
+  background-image: none !important;
 }
 
 .secondBox::before {
@@ -109,6 +129,7 @@
   padding-top: 10px;
   display: flex;
   flex-direction: column;
+  background-image: none !important;
   visibility: hidden;
 }
 
@@ -119,6 +140,30 @@
   box-shadow: 2px 1px 1px 0px var(--color-gray-500);
   position: absolute;
   top: 0;
+}
+
+
+.thirdLink:focus {
+  color: var(--color-blue-600) !important;
+  outline: none;
+  font-weight: 700;
+  text-decoration: underline var(--color-blue-600) !important;
+  font-weight: 700 !important;
+  outline: 2px solid var(--color-blue-600);
+}
+
+.thirdLink:hover {
+  color: var(--color-blue-600);
+  font-weight: 700;
+  text-decoration: underline var(--color-blue-600);
+}
+
+.margin5px {
+  margin-left: 5px;
+}
+
+.thirdLink {
+  width: 95%;
 }
 
 /* ---------------------------------------------- */
